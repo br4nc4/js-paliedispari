@@ -21,18 +21,14 @@ function verificaPalindromo (parola){
         //parolaScompostaOpposite.reverse(i);
     }
 
-    
-    if (parolaScompostaOpposite === parolaScompostaOrdered){
-        console.log("la parola inserita è un palindromo")
-        //console.log(parolaScompostaOrdered + " " + parolaScompostaOpposite);
-        return parolaScompostaOpposite === parolaScompostaOrdered
-    } 
+    if (JSON.stringify(parolaScompostaOrdered) === JSON.stringify(parolaScompostaOpposite)){
+        console.log(parolaScompostaOrdered + " " + parolaScompostaOpposite + " hai inserito una parola palindroma");
+        return true;
+    }
     else{
-        console.log("la parola inserita non è un palindromo")
-        console.log(parolaScompostaOrdered + " " + parolaScompostaOpposite);
+        console.log("la parola inserita non è palindroma "+ parolaScompostaOrdered + " " + parolaScompostaOpposite);
         return false;
     }
-
     //return parolaScompostaOrdered;
     //return parolaScompostaOpposite;
 } 
