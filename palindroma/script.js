@@ -21,13 +21,16 @@ function verificaPalindromo (parola){
         //parolaScompostaOpposite.reverse(i);
     }
 
+    
     if (parolaScompostaOpposite === parolaScompostaOrdered){
         console.log("la parola inserita è un palindromo")
-        console.log(parolaScompostaOrdered + " " + parolaScompostaOpposite);
+        //console.log(parolaScompostaOrdered + " " + parolaScompostaOpposite);
+        return parolaScompostaOpposite === parolaScompostaOrdered
     } 
     else{
         console.log("la parola inserita non è un palindromo")
         console.log(parolaScompostaOrdered + " " + parolaScompostaOpposite);
+        return false;
     }
 
     //return parolaScompostaOrdered;
