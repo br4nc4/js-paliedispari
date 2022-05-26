@@ -9,14 +9,16 @@ let inputParola = prompt("inserisci una parola");
     return parolaScomposta;
 }  */
 function verificaPalindromo (parola){
+
     /* let parolaScompostaOrdered = [];
     for (let i=0; i<parola.length; i++){
         parolaScompostaOrdered.push(parola[i]);
     } */
+
     let parolaScompostaOpposite = [];
-    for (let i=0;i<parola.length; i++){
+    for (i=parola.length-1; i>=0; i--){
         parolaScompostaOpposite.push(parola[i]);
-        parolaScompostaOpposite.reverse(i);
+        //parolaScompostaOpposite.reverse(i);
     }
 
     //return parolaScompostaOrdered;
