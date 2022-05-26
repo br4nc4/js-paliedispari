@@ -6,8 +6,7 @@ function pcNumeroRandom (){
     const numeroRandom = Math.floor(Math.random() * 5)+1;
     return numeroRandom;
 }
-
-console.log(pcNumeroRandom());
-
-let sommaNumeri=userInput2 + pcNumeroRandom();
+let numeroGeneratoPc = pcNumeroRandom();
+let sommaNumeri = userInput2 + numeroGeneratoPc;
+console.log(numeroGeneratoPc)
 console.log(sommaNumeri);
