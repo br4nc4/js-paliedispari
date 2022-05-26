@@ -7,7 +7,7 @@ function pcNumeroRandom (){
     return numeroRandom;
 }
 
-//console.log(pcNumeroRandom());
+console.log(pcNumeroRandom());
 
-let sommaNumeri=userInput2+pcNumeroRandom();
+let sommaNumeri=userInput2 + pcNumeroRandom();
 console.log(sommaNumeri);
