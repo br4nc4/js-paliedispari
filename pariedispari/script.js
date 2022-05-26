@@ -1,5 +1,5 @@
 //const userInput1 = prompt("scegli pari o dispari");
-const userInput2 = prompt("scegli un numero da 1 a 5");
+const userInput2 = parseInt(prompt("scegli un numero da 1 a 5"));
 
 function pcNumeroRandom (){
     const numeroRandom = Math.floor(Math.random() * 5)+1;
@@ -8,7 +8,7 @@ function pcNumeroRandom (){
 
 let numeroGeneratoPc = pcNumeroRandom();
 
-//console.log(pcNumeroRandom());
+console.log(pcNumeroRandom());
 
 let sommaNumeri = userInput2 + numeroGeneratoPc;
 
